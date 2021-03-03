@@ -94,8 +94,8 @@ class App extends Component {
     storage.setItem('networkType', networkType)
 
     if (!href) {
-href = window.location.origin
-}
+      href = 'https://b-derouet.github.io/pi-explorer'
+    }
     window.location.href = href
   }
 
