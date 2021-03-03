@@ -5,12 +5,12 @@ const networks = {
 }
 
 const hostnameToNetworkType = hostname => {
-  if (hostname === 'testnet1.local') {
-return networks.testnet1
+  if (hostname === 'testnet3.local') {
+return networks.testnet3
 } else if (hostname === 'testnet2.local') {
 return networks.testnet2
 } else {
-return networks.testnet3
+return networks.testnet1
 }
 }
 
