@@ -130,29 +130,29 @@ href = window.location.origin
             <InfoBanner />
             <div id="main-content">
               <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/accounts" component={Accounts} />
-                <Route path="/account/:id" component={Account} />
-                <Route path="/effects" component={Effects} />
-                <Route path="/ledgers" component={Ledgers} />
-                <Route path="/ledger/:id" component={Ledger} />
-                <Route path="/operations" component={Operations} />
-                <Route path="/payments" component={Payments} />
-                <Route path="/txs" component={Transactions} />
-                <Route path="/tx/:id" component={Transaction} />
+                <Route exact path="/pi-explorer/" component={Home} />
+                <Route path="/pi-explorer/accounts" component={Accounts} />
+                <Route path="/pi-explorer/account/:id" component={Account} />
+                <Route path="/pi-explorer/effects" component={Effects} />
+                <Route path="/pi-explorer/ledgers" component={Ledgers} />
+                <Route path="/pi-explorer/ledger/:id" component={Ledger} />
+                <Route path="/pi-explorer/operations" component={Operations} />
+                <Route path="/pi-explorer/payments" component={Payments} />
+                <Route path="/pi-explorer/txs" component={Transactions} />
+                <Route path="/pi-explorer/tx/:id" component={Transaction} />
                 <Route
-                  path="/search/:id"
+                  path="/pi-explorer/search/:id"
                   render={({match}) => {
                     const searchString = match.params.id
                     return <Redirect to={searchStringToPath(searchString)} />
                   }}
                 />
                 <Route
-                  path="/error/insecure-horizon-server"
+                  path="/pi-explorer/error/insecure-horizon-server"
                   component={InsecureNetworkError}
                 />
-                <Route path="/error/not-found/:id" component={NoMatchError} />
-                <Route path="/error/general/:id" component={Error} />
+                <Route path="/pi-explorer/error/not-found/:id" component={NoMatchError} />
+                <Route path="/pi-explorer/error/general/:id" component={Error} />
                 <Route component={Error} />
               </Switch>
             </div>
