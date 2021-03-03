@@ -4,9 +4,9 @@ import Modal from 'react-bootstrap/lib/Modal'
 import {FormattedMessage} from 'react-intl'
 
 const networkAddresses = [
-  'https://horizon.stellar.org',
-  'https://stellar-api.wancloud.io',
-  'https://api.chinastellar.com',
+  'http://testnet1.minepi.com:31401/',
+  'http://testnet2.minepi.com:31401/',
+  'http://testnet3.minepi.com:31401/',
 ]
 
 /**
@@ -54,22 +54,22 @@ const ResourceModalBody = ({networkAddress, inputValue, dropdownValue, networkTy
           /><br/>
 
         <FormattedMessage id="save">
-          {msg => (<input type="submit" value={msg} />)}
+          {message => (<input type="submit" value={message} />)}
         </FormattedMessage>
       </div>
     </form>
   )
 }
 
-const ResourceModal = props => (
-  <Modal id="networkModal" show={props.show} onHide={props.handleCloseFn}>
+const ResourceModal = properties => (
+  <Modal id="networkModal" show={properties.show} onHide={properties.handleCloseFn}>
     <Modal.Header closeButton>
       <Modal.Title id="contained-modal-title-lg" style={{color: '#dce2ec'}}>
         <FormattedMessage id="network.address" />
       </Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <ResourceModalBody {...props} />
+      <ResourceModalBody {...properties} />
     </Modal.Body>
   </Modal>
 )
@@ -107,8 +107,8 @@ ResourceModalContainer.propTypes = {
 }
 
 class CustomNetworkButtonWithResourceModal extends React.Component {
-  constructor(props, context) {
-    super(props, context)
+  constructor(properties, context) {
+    super(properties, context)
 
     this.handleClick = this.handleClick.bind(this)
     this.handleClose = this.handleClose.bind(this)
@@ -130,14 +130,16 @@ class CustomNetworkButtonWithResourceModal extends React.Component {
     const dropdown = this.state.dropdownValue
     const newNetworkAddress = dropdown !== '' ? dropdown : input
     if (newNetworkAddress !== this.props.networkAddress) {
-      this.props.setNetworkAddress(newNetworkAddress)
+      const newNetworkType = `testnet${networkAddresses.indexOf(newNetworkAddress) + 1}`
+      this.props.setNetworkAddress(newNetworkType, newNetworkAddress)
     }
   }
 
   handleDropdownChange(event) {
     const newNetworkAddress = event.target.value
     this.setState({dropdownValue: newNetworkAddress})
-    this.props.setNetworkAddress(newNetworkAddress)
+    const newNetworkType = `testnet${networkAddresses.indexOf(newNetworkAddress) + 1}`
+    this.props.setNetworkAddress(newNetworkType, newNetworkAddress)
   }
 
   handleInputChange(event) {

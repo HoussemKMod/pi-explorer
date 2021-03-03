@@ -2,30 +2,36 @@ import React from 'react'
 import {networks} from '../../lib/stellar'
 import CustomNetworkButton from '../shared/CustomNetworkButton'
 
-const NetworkButton = ({networkType, selectedNetworkType, switchNetworkType}) =>
+const networkAddresses = {
+  testnet1: 'http://testnet1.minepi.com:31401/',
+  testnet2: 'http://testnet2.minepi.com:31401/',
+  testnet3: 'http://testnet3.minepi.com:31401/',
+}
+
+const NetworkButton = ({networkType, selectedNetworkType, setNetworkAddress}) =>
   <button
     className={networkType === selectedNetworkType ? 'is-active' : 'is-inactive'}
-    onClick={e => switchNetworkType(networkType)}
+    onClick={e => setNetworkAddress(networkType, networkAddresses[networkType])}
   >
     {networkType.toUpperCase()}
   </button>
 
-const NetworkSelector = props =>
+const NetworkSelector = properties =>
   <div className="Network-Selector">
-    {[networks.public, networks.test].map(networkType =>
+    {Object.keys(networks).map(networkType =>
       <NetworkButton
         key={networkType}
         hide={networks[networkType].hide}
         networkType={networkType}
-        selectedNetworkType={props.networkType}
-        switchNetworkType={props.switchNetworkType}
-      />
+        selectedNetworkType={properties.networkType}
+        setNetworkAddress={properties.setNetworkAddress}
+      />,
     )}
     <CustomNetworkButton
       key="custom-network"
-      networkAddress={props.networkAddress}
-      networkType={props.networkType}
-      setNetworkAddress={props.setNetworkAddress}
+      networkAddress={properties.networkAddress}
+      networkType={properties.networkType}
+      setNetworkAddress={properties.setNetworkAddress}
     />
   </div>
 

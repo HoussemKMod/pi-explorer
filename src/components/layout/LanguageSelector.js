@@ -29,17 +29,11 @@ const LanguageSelector = ({
       />
     </Dropdown.Toggle>
     <Dropdown.Menu style={{color: 'white'}}>
+      <MenuItem lang="fr" onClick={switcher}>
+        Français
+      </MenuItem>
       <MenuItem lang="en" onClick={switcher}>
         English
-      </MenuItem>
-      <MenuItem lang="zh" onClick={switcher}>
-        中文
-      </MenuItem>
-      <MenuItem lang="ru" onClick={switcher}>
-        Pусский
-      </MenuItem>
-      <MenuItem lang="vi" onClick={switcher}>
-        Tiếng Việt
       </MenuItem>
       <MenuItem
         onClick={onClickTranslateHelp}
