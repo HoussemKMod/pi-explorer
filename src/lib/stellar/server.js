@@ -18,7 +18,7 @@ class WrappedServer extends sdk.Server {
       super(networkAddress, {allowHttp: true})
     } catch (e) {
       storage.removeItem('networkAddress')
-      window.location.href = `/pi-explorer/error/insecure-horizon-server/?${networkAddress}`
+      window.location.href = `/error/insecure-horizon-server/?${networkAddress}`
     };
   }
 

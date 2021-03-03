@@ -94,7 +94,7 @@ class App extends Component {
     storage.setItem('networkType', networkType)
 
     if (!href) {
-      href = 'https://b-derouet.github.io/pi-explorer'
+      href = window.location.origin
     }
     window.location.href = href
   }
@@ -117,7 +117,7 @@ class App extends Component {
         locale={this.state.language}
         messages={getMessages(this.state.language)}
       >
-        <Router basename="/pi-explorer">
+        <Router>
           <div className="App">
             <Header
               networkAddress={this.state.networkAddress}

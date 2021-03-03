@@ -2,7 +2,7 @@
 
 A ledger explorer for [Pi Network](https://minepi.com/).
 
-link: "https://b-derouet.github.io/pi-explorer"
+link: [http://www.piexp.fr](http://www.piexp.fr)
 
 ## Resources
 
@@ -10,34 +10,34 @@ link: "https://b-derouet.github.io/pi-explorer"
 
 | Resource     | URI                                          |
 | ------------ | -------------------------------------------- |
-| Operations   | [/operations](https://b-derouet.github.io/pi-explorer/operations) |
-| Transactions | [/txs](https://b-derouet.github.io/pi-explorer/txs)               |
-| Ledgers      | [/ledgers](https://b-derouet.github.io/pi-explorer/ledgers)       |
-| Payments     | [/payments](https://b-derouet.github.io/pi-explorer/payments)     |
-| Effects      | [/effects](https://b-derouet.github.io/pi-explorer/effects)       |
+| Operations   | [/operations](http://www.piexp.fr/operations) |
+| Transactions | [/txs](http://www.piexp.fr/txs)               |
+| Ledgers      | [/ledgers](http://www.piexp.fr/ledgers)       |
+| Payments     | [/payments](http://www.piexp.fr/payments)     |
+| Effects      | [/effects](http://www.piexp.fr/effects)       |
 
 ### Accounts
 
 | Resource             | URI                                                                                                                                                      |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| by Public address    | [/account/GAREELUB43IRHWEASCFBLKHURCGMHE5IF6XSE7EXDLACYHGRHM43RFOX](https://b-derouet.github.io/pi-explorer/account/GAREELUB43IRHWEASCFBLKHURCGMHE5IF6XSE7EXDLACYHGRHM43RFOX) |
+| by Public address    | [/account/GAREELUB43IRHWEASCFBLKHURCGMHE5IF6XSE7EXDLACYHGRHM43RFOX](http://www.piexp.fr/account/GAREELUB43IRHWEASCFBLKHURCGMHE5IF6XSE7EXDLACYHGRHM43RFOX) |
 
 ### Search
 
 | Resource              | URI                                                                                                                                                                    |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |                                                                                      |
-| Public address        | [/search/GAREELUB43IRHWEASCFBLKHURCGMHE5IF6XSE7EXDLACYHGRHM43RFOX](https://b-derouet.github.io/pi-explorer/search/GAREELUB43IRHWEASCFBLKHURCGMHE5IF6XSE7EXDLACYHGRHM43RFOX)                 |
-| Ledger                | [/search/10000000](https://b-derouet.github.io/pi-explorer/search/10000000)                                                                                                                 |
-| Transaction           | [/search/26a568681712a44a515b2c90dcfaadb3ed2c40dc60254638407937bee4767071](https://b-derouet.github.io/pi-explorer/search/26a568681712a44a515b2c90dcfaadb3ed2c40dc60254638407937bee4767071) |
+| Public address        | [/search/GAREELUB43IRHWEASCFBLKHURCGMHE5IF6XSE7EXDLACYHGRHM43RFOX](http://www.piexp.fr/search/GAREELUB43IRHWEASCFBLKHURCGMHE5IF6XSE7EXDLACYHGRHM43RFOX)                 |
+| Ledger                | [/search/10000000](http://www.piexp.fr/search/10000000)                                                                                                                 |
+| Transaction           | [/search/26a568681712a44a515b2c90dcfaadb3ed2c40dc60254638407937bee4767071](http://www.piexp.fr/search/26a568681712a44a515b2c90dcfaadb3ed2c40dc60254638407937bee4767071) |
 
 ### Misc
 
 | Resource    | URI                                                                                                                                                            |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Transaction | [/tx/26a568681712a44a515b2c90dcfaadb3ed2c40dc60254638407937bee4767071](https://b-derouet.github.io/pi-explorer/tx/26a568681712a44a515b2c90dcfaadb3ed2c40dc60254638407937bee4767071) |
-| Ledger      | [/ledger/10000000](https://b-derouet.github.io/pi-explorer/ledger/10000000)                                                                                                         |
-| Anchor      | [/anchor/apay.io](https://b-derouet.github.io/pi-explorer/anchor/apay.io)                                                                                                           |
-| Asset       | [/asset/NGN](https://b-derouet.github.io/pi-explorer/asset/NGN)                                                                                                                     |
+| Transaction | [/tx/26a568681712a44a515b2c90dcfaadb3ed2c40dc60254638407937bee4767071](http://www.piexp.fr/tx/26a568681712a44a515b2c90dcfaadb3ed2c40dc60254638407937bee4767071) |
+| Ledger      | [/ledger/10000000](http://www.piexp.fr/ledger/10000000)                                                                                                         |
+| Anchor      | [/anchor/apay.io](http://www.piexp.fr/anchor/apay.io)                                                                                                           |
+| Asset       | [/asset/NGN](http://www.piexp.fr/asset/NGN)                                                                                                                     |
 
 ## Development
 

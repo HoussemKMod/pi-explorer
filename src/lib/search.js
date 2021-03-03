@@ -28,7 +28,7 @@ return null
     return `/account/${kp.publicKey()}`
   }
 
-  return `/pi-explorer/error/not-found/${searchString}`
+  return `/error/not-found/${searchString}`
 }
 
 export {searchStringToPath as searchStrToPath}
