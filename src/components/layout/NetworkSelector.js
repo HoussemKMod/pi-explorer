@@ -3,9 +3,9 @@ import {networks} from '../../lib/stellar'
 import CustomNetworkButton from '../shared/CustomNetworkButton'
 
 const networkAddresses = {
-  testnet1: 'http://testnet1.minepi.com:31401/',
-  testnet2: 'http://testnet2.minepi.com:31401/',
-  testnet3: 'http://testnet3.minepi.com:31401/',
+  testnet1: 'https://cors-anywhere.herokuapp.com/http://testnet1.minepi.com:31401/',
+  testnet2: 'https://cors-anywhere.herokuapp.com/http://testnet2.minepi.com:31401/',
+  testnet3: 'https://cors-anywhere.herokuapp.com/http://testnet3.minepi.com:31401/',
 }
 
 const NetworkButton = ({networkType, selectedNetworkType, setNetworkAddress}) =>
