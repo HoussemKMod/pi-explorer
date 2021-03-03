@@ -51,15 +51,15 @@ message += `\n\tStack: [${e.stack}]`
 
   let errorURI
   if (status === 404) {
-    let redirectURI = '/error/not-found'
+    let redirectURI = '/pi-explorer/error/not-found'
     if (id) {
 redirectURI += `/${id}`
 }
     errorURI = redirectURI
   } else if (e.message === 'Network Error') {
-    errorURI = '/error/general/network'
+    errorURI = '/pi-explorer/error/general/network'
   } else {
-    errorURI = `/error/general/${id}`
+    errorURI = `/pi-explorer/error/general/${id}`
   }
   window.location.href = errorURI
 }
