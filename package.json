@@ -7,7 +7,7 @@
   "maintainers": [
     "Brewal Derouet"
   ],
-  "homepage": "/pi-explorer",
+  "homepage": "https://b-derouet.github.io/pi-explorer",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/B-Derouet/pi-explorer.git"

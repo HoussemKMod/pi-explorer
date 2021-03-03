@@ -117,7 +117,7 @@ class App extends Component {
         locale={this.state.language}
         messages={getMessages(this.state.language)}
       >
-        <Router basename="https://b-derouet.github.io/pi-explorer">
+        <Router basename="/pi-explorer">
           <div className="App">
             <Header
               networkAddress={this.state.networkAddress}
