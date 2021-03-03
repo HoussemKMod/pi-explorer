@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import ReactLoadable from 'react-loadable'
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Redirect,
   Route,
   Switch,
@@ -117,7 +117,7 @@ href = window.location.origin
         locale={this.state.language}
         messages={getMessages(this.state.language)}
       >
-        <Router basename="">
+        <Router basename="https://b-derouet.github.io/pi-explorer">
           <div className="App">
             <Header
               networkAddress={this.state.networkAddress}
