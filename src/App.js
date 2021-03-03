@@ -130,7 +130,7 @@ class App extends Component {
             <InfoBanner />
             <div id="main-content">
               <Switch>
-                <Route path="/" component={Home} />
+                <Route exact path="/" component={Home} />
                 <Route path="/accounts" component={Accounts} />
                 <Route path="/account/:id" component={Account} />
                 <Route path="/effects" component={Effects} />
